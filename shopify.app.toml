@@ -1,0 +1,3 @@
+name = "GCR Opt-In"
+type = "custom"
+organization_id = "<your-partner-org-id>" # replace with your Shopify Partner organization ID
