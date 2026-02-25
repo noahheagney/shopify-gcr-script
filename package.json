@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/noahheagney/shopify-gcr-script#readme",
   "dependencies": {
-    "@shopify/checkout-ui-extensions-react": "^0.27.3"
+    "@shopify/checkout-ui-extensions-react": "^0.27.3",
+    "@shopify/post-purchase-ui-extensions-react": "^0.13.5",
+    "react": "^17.0.2"
   }
 }

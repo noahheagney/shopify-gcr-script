@@ -1,0 +1,11 @@
+name = "gcr-opt-in-extension"
+type = "checkout_post_purchase"
+uid = "38a703f7-70ec-306b-8ddf-e501a7d99ece45868a58"
+
+# [[metafields]]
+# namespace = "my-namespace"
+# key = "my-key"
+
+# [[metafields]]
+# namespace = "my-namespace"
+# key = "my-key-2"
