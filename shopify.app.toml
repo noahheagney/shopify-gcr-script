@@ -1,18 +1,15 @@
 name = "GCR Opt-In"
 type = "custom"
-# Replace with your app's OAuth client ID (API key) from the Partner Dashboard
-client_id = "<your-client-id>"
-organization_id = "<your-partner-org-id>" # replace with your Shopify Partner organization ID
+client_id = "f862751401a81b080930d35cd29f694b"
 
-# App settings required by Shopify CLI — replace placeholder URLs and scopes
-application_url = "https://example.com"
+application_url = "https://shopify-gcr-script.vercel.app"
 embedded = false
 
 [auth]
-	redirect_urls = ["https://example.com/auth/callback"]
-	scopes = ["read_orders", "write_orders"]
-
-[[webhooks]]
-	topic = "APP_UNINSTALLED"
-	address = "https://example.com/webhooks/app_uninstalled"
-	format = "json"
+  redirect_urls = ["https://shopify-gcr-script.vercel.app"]
+  scopes = ["read_checkouts","read_orders"]
+[webhooks]
+topic = "APP_UNINSTALLED"
+address = "https://example.com/webhooks/app_uninstalled"
+format = "json"
+api_version = "2026-01"
