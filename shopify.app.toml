@@ -3,3 +3,16 @@ type = "custom"
 # Replace with your app's OAuth client ID (API key) from the Partner Dashboard
 client_id = "<your-client-id>"
 organization_id = "<your-partner-org-id>" # replace with your Shopify Partner organization ID
+
+# App settings required by Shopify CLI — replace placeholder URLs and scopes
+application_url = "https://example.com"
+embedded = false
+
+[auth]
+	redirect_urls = ["https://example.com/auth/callback"]
+	scopes = ["read_orders", "write_orders"]
+
+[[webhooks]]
+	topic = "APP_UNINSTALLED"
+	address = "https://example.com/webhooks/app_uninstalled"
+	format = "json"
