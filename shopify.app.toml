@@ -1,3 +1,5 @@
 name = "GCR Opt-In"
 type = "custom"
+# Replace with your app's OAuth client ID (API key) from the Partner Dashboard
+client_id = "<your-client-id>"
 organization_id = "<your-partner-org-id>" # replace with your Shopify Partner organization ID
