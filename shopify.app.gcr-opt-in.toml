@@ -1,19 +1,15 @@
-# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
-
-client_id = "04e888f0b20b1fd408e4eb0ac80cada2"
 name = "GCR Opt-In"
-application_url = "https://shopify.dev/apps/default-app-home"
-embedded = true
-
-[build]
-automatically_update_urls_on_dev = true
-
-[webhooks]
-api_version = "2026-04"
-
-[access_scopes]
-# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = ""
+type = "custom"
+client_id = "f862751401a81b080930d35cd29f694b"
+organization_id = "4293454"
+application_url = "https://shopify-gcr-script.vercel.app"
+embedded = false
 
 [auth]
-redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
+  redirect_urls = ["https://shopify-gcr-script.vercel.app"]
+  scopes = ["read_checkouts","read_orders"]
+[webhooks]
+topic = "APP_UNINSTALLED"
+address = "https://example.com/webhooks/app_uninstalled"
+format = "json"
+api_version = "2026-01"
