@@ -1,0 +1,4 @@
+name: GCR Opt-In
+type: checkout_ui_extension
+extension_points:
+  - Checkout::PostPurchase::Render
